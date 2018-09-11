@@ -14,6 +14,7 @@ export default function Send({ text, containerStyle, onSend, children, textStyle
         accessibilityLabel="send"
         style={[styles.container, containerStyle]}
         onPress={() => {
+          console.log(123)
           onSend({ text: text.trim() }, true);
         }}
         accessibilityTraits="button"
